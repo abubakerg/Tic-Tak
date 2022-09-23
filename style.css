@@ -1,0 +1,128 @@
+
+body {
+    margin: 0px;
+    justify-content: center;
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    text-align: center;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+   
+  }
+
+.navbarbrand{
+    background-color: black;
+    color: white;
+}
+
+a.navbarbrand {text-decoration: none; }
+
+.gameContainer{
+ display: flex;
+ justify-content: center;
+ margin-top: 32px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    
+}
+.container div{
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+}
+.box:hover{
+    background-color:  rgb(247, 239, 255);
+}
+.gameinfo{
+    padding-left: 35px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.gif{
+    display: none;
+}
+.gif2{
+    display: flex;
+    margin: auto;
+}
+.bt{
+    border-top: 0 !important;
+}
+.bb{
+    border-bottom: 0 !important;
+}
+.bl{
+    border-left: 0 !important;
+}
+.br{
+    border-right: 0 !important;
+}
+.indo{
+    margin-top: -24px;
+}
+
+.info{
+    margin-right: 16px;
+    font-size: 20px;
+}
+.highlight{
+    background-color: rgb(235, 220, 250);
+}
+.title{
+    font-size: 42px;
+    margin-top: -12px ;
+    margin-right: 32px ;
+    line-height: -1000px;
+}
+.btn-9 {
+  
+    background: #000;
+    color: #fff;
+    line-height: 22px;
+    font-size: 16px;
+    width: 68px;
+    border-radius: 8px;
+}
+.btn-9:hover {
+    background: transparent;
+    color: #000;
+  }
+@media  screen and (max-width: 680px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 22px;
+    }
+    .container{
+        grid-template-rows: repeat(3,12vw);
+        grid-template-columns: repeat(3,12vw);
+        
+    }
+    .title{
+        font-size: 1.8rem;
+    }
+    .gif{
+        margin-top: -20px;
+        height: 120px;
+    }
+}
